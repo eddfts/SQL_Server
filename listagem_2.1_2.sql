@@ -82,7 +82,7 @@ FROM Sales.OrderValues;
 
 SELECT orderid, custid, val, 
        SUM(val) OVER() AS ValorTotal, --retorna o valor total de todos os registros
-	   SUM(val) OVER(PARTITION  BY custid) AS ValorTotalCust  --Retorna o valor total de todos do mesnto custid
+	   SUM(val) OVER(PARTITION  BY custid) AS ValorTotalCust  --Retorna o valor total de todos do mesmo custid
 FROM Sales.OrderValues
 
 SELECT SUM (val)
