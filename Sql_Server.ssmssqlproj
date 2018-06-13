@@ -19,6 +19,18 @@
     </LogicalFolder>
     <LogicalFolder Name="Consultas" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="Alfanumericos_Collation.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:HPPROLIANT:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>HPPROLIANT</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Alfanumericos_Collation.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Alfanumericos_Operadores_funcoes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:HPPROLIANT:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>HPPROLIANT</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Alfanumericos_Operadores_funcoes.sql</FullPath>
+        </FileNode>
         <FileNode Name="Constraint_Tabela_Empregados.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:HPPROLIANT:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>HPPROLIANT</AssociatedConnSrvName>
