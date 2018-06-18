@@ -42,6 +42,52 @@ SELECT charindex(' ','Carlito Eduardodefreitas');
 
 --PATINDEX
 SELECT PATINDEX('%[0-9]%','abcd123efgh');
+
+--REPLACE 
+SELECT REPLACE('1-a 2-b','-',':');
  
+ --REPLICATE
+ SELECT REPLICATE('abc',3);
+ SELECT supplierid,
+        RIGHT(REPLICATE('0', 9)+ CAST(supplierid AS varchar(10)),10) AS strsupplierid
+ FROM Production.Suppliers;
+
+ --STUFF
+ SELECT STUFF('xyz', 2,1,'abc');
+ 
+ --UPPER, LOWER
+ SELECT UPPER('Carlos Eduardo');
+ SELECT LOWER('Carlos Eduardo');
+
+--RTRIM e LTRIM
+SELECT RTRIM(LTRIM(' abc '));
+
+--O predicado LIKE
+
+--Funcionários cujo o sobrenome começa com D
+SELECT empid, lastname
+FROM  HR.Employees
+WHERE lastname LIKE N'D%';
+
+--funcionaários cujo o segundo caracter do sobrenome E
+SELECT empid, lastname
+FROM  HR.Employees
+WHERE lastname LIKE N'_e%';
+
+
+--Funcionários onde o primeiro caracter do sobrenome seja'A', 'B', ou 'C'
+SELECT empid, lastname
+FROM  HR.Employees
+WHERE lastname LIKE N'[ABC]%';
+
+--Funcionários onde o primeiro caracter do sobrenome esteja entre 'A' e 'E'
+SELECT empid, lastname
+FROM  HR.Employees
+WHERE lastname LIKE N'[A-E]%';
+
+--Funcionarios onde o primeiro caracter do sobrenome não esteja entre 'A'e'E'
+SELECT empid, lastname
+FROM  HR.Employees
+WHERE lastname LIKE N'[^A-E]%';
 
 
