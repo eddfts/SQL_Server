@@ -55,6 +55,12 @@
           <AssociatedConnUserName />
           <FullPath>Create_tabela_Orders.sql</FullPath>
         </FileNode>
+        <FileNode Name="DataHora.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:HPPROLIANT:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>HPPROLIANT</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>DataHora.sql</FullPath>
+        </FileNode>
         <FileNode Name="Expressao_Case.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:HPPROLIANT:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>HPPROLIANT</AssociatedConnSrvName>
