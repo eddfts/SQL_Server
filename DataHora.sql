@@ -68,4 +68,70 @@ SELECT  CONVERT(CHAR(12), CURRENT_TIMESTAMP, 114);
 
 SELECT  CAST(CONVERT(CHAR(12), CURRENT_TIMESTAMP, 114) AS DATETIME);
 
+--SWITCHOFFSET
+/*Ajusta um valor de entrada DATETIMEOFFSET para um fuso horário especificado.
+*/
 
+SELECT SWITCHOFFSET(SYSDATETIMEOFFSET(),'-05:00' ); 
+
+/*A seguir ajusta o valor datetimeoffset para atual UTC (Universal Time Coordinated)
+*O Tempo Universal Coordenado, também conhecido como tempo civil, é o fuso horário 
+*de referência a partir do qual se calculam todas as outras zonas horárias do mundo.
+*/
+
+
+SELECT SWITCHOFFSET(SYSDATETIMEOFFSET(),'+00:00' ); 
+
+--TODATETIMEOFFSET
+/*Define o deslocamento de fuso horário de um valor de data e de hora de 
+*entrada.
+*/
+
+SELECT TODATETIMEOFFSET(SYSDATETIME(),'-05:00');
+
+--DATEADD
+/*Permite adicionar um número especifico de unidades de uma parte relativa á data especificada 
+*em um valor de data e de hora de entrada.
+*/
+
+SELECT DATEADD(YEAR, 1, '20090212');
+SELECT DATEADD(MONTH, 1, '20090212');
+SELECT DATEADD(DAY, 60, '20090212');
+
+--DATEDIFF
+/*
+*Retorna a diferença entre dois valoresde data e de hora
+*/
+SELECT DATEDIFF(day,'20080212','20090212' );
+SELECT DATEDIFF(month,'20080212','20090212' );
+SELECT DATEDIFF(YEAR,'20080212','20090212' );
+
+SELECT DATEADD (day, DATEDIFF(day, '20010101', CURRENT_TIMESTAMP), '20010101');
+
+--DATEPART
+/*Retorna um numero inteiro que representa uma parte solicitada de um determinado valor de data 
+*e hora
+*/
+SELECT DATEPART(month,'20090312') AS MES;
+
+--YEAR, MONTH e DAY
+
+SELECT 
+	DAY('20090212') AS dia ,
+	MONTH('20090212') AS mes,
+	YEAR('20090212') AS ano;
+
+--DATENAME
+/*Retorna, quando definido como mes retorna o nome por extenso, depende do idioma da seção
+*/
+--SET language us_english;
+SELECT DATENAME(MONTH,'20090212');
+SELECT DATENAME(YEAR,'20090212');
+
+--ISDATE
+/*Aceita uma sequencia de caracteres como enatrada e retorna 1 caso ela seja conversivel em 
+*um tipo de dados Data e hora, caso contrario retorna 0. se é uma data válida ou não.
+*/
+
+SELECT  ISDATE ('20090212');
+SELECT  ISDATE ('20090235');
