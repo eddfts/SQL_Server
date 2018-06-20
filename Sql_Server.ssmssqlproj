@@ -38,8 +38,8 @@
           <FullPath>Constraint_Tabela_Empregados.sql</FullPath>
         </FileNode>
         <FileNode Name="Constraint_Tabela_Orders.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:HPPROLIANT:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>HPPROLIANT</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Constraint_Tabela_Orders.sql</FullPath>
         </FileNode>
@@ -50,8 +50,8 @@
           <FullPath>Create_Tabela_Empregados.sql</FullPath>
         </FileNode>
         <FileNode Name="Create_tabela_Orders.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:HPPROLIANT:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>HPPROLIANT</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Create_tabela_Orders.sql</FullPath>
         </FileNode>
@@ -79,6 +79,12 @@
           <AssociatedConnUserName />
           <FullPath>listagem_2.1_2.sql</FullPath>
         </FileNode>
+        <FileNode Name="Metadados.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:HPPROLIANT:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>HPPROLIANT</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Metadados.sql</FullPath>
+        </FileNode>
         <FileNode Name="Nulls.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:HPPROLIANT:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>HPPROLIANT</AssociatedConnSrvName>
@@ -86,8 +92,8 @@
           <FullPath>Nulls.sql</FullPath>
         </FileNode>
         <FileNode Name="Predicado_e_Operadores.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:HPPROLIANT:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>HPPROLIANT</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Predicado_e_Operadores.sql</FullPath>
         </FileNode>
